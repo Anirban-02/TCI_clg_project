@@ -1,7 +1,7 @@
 const express = require('express')
 const { spawn } = require('child_process');
 const app = express()
-const port=process.env.PORT||5000;
+const port=process.env.PORT||4000;
 const cors=require('cors');
 const path = require('path');
 require('dotenv').config()
