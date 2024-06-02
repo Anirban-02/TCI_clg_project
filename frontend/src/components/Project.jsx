@@ -28,7 +28,7 @@ const Project = () => {
       else{
     try {
         //localhost:5000 ~ server side 
-        const res = await axios.post('http://localhost:5000/api/input',
+        const res = await axios.post('/api/input',
         {
             fileContent
         },
@@ -85,7 +85,7 @@ const handleOutput =async(e)=>{
   else{
   try {
       //localhost:5000 ~ server side 
-      const res = await axios.get("http://localhost:5000/api/output",{
+      const res = await axios.get("/api/output",{
         headers:{'Accept':'application/json, text/plain, /','Content-Type':'text/plain'}
     });
       if(res.status === 422 || !res.data)
