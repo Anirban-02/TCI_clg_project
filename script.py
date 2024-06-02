@@ -1,6 +1,8 @@
 # import system library
 import sys
+import os
 import json
+os.system('python -m pip install nltk')
 # take passed variable values 
 c_code = sys.argv[1]
 
