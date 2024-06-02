@@ -103,8 +103,8 @@ print('>>> Possible Test cases Identified in Conditional Statements: \n\t')
 if not Condition:
     print('No Conditional Statements detected')
 
-print("( ",end="")
-for i in range(1,len(Condition)-1):
+
+for i in range(0,len(Condition)):
     if Condition[i] in ['&&','||']:
         print(')','( ', end="")
     elif Condition[i] == '>':
@@ -121,10 +121,10 @@ for i in range(1,len(Condition)-1):
         print(c_operators[0]," ", end="")
     else:
         print(Condition[i]," ", end="")
-print(")",end="")
+
 print('')
-print("( ",end="")
-for i in range(1,len(Condition)-1):
+
+for i in range(0,len(Condition)):
     if Condition[i] in ['&&','||']:
         print(')','( ', end="")
     elif Condition[i] == '>':
@@ -141,7 +141,6 @@ for i in range(1,len(Condition)-1):
         print(c_operators[1]," ", end="")
     else:
         print(Condition[i]," ", end="")
-print(")")
 print()
 
 # Extract Loops
