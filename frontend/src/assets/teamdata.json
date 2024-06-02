@@ -1,0 +1,32 @@
+[
+    {
+        "name":"Mr. Avijit Bose",
+        "rollno":"Project Guide",
+        "pic":"./img/mem6.jpg"
+    },
+    {
+        "name":"Ahana Das",
+        "rollno":"CSE/20/043",
+        "pic":"./img/mem3.jpg"
+    },
+    {
+        "name":"Anirban Ghosh",
+        "rollno":"CSE/20/038",
+        "pic":"./img/mem2.jpeg"
+    },
+    {
+        "name":"Bipashna Sadhukhan",
+        "rollno":"CSE/20/035",
+        "pic":"./img/mem1.jpeg"
+    },
+    {
+        "name":"Archisman Das",
+        "rollno":"CSE/20/047",
+        "pic":"./img/mem4.jpg"
+    },
+    {
+        "name":"Sangramjit Roy",
+        "rollno":"CSE/20/042",
+        "pic":"./img/mem5.jpeg"
+    }
+]
