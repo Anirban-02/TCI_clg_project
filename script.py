@@ -1,13 +1,12 @@
 # import system library
 import sys
-import os
 import json
-os.system('python -m pip install nltk')
+
 # take passed variable values 
 c_code = sys.argv[1]
 
 import nltk
-#nltk.download('punkt')  # Uncomment if punkt is not downloaded
+nltk.download('punkt')  # Uncomment if punkt is not downloaded
 from nltk.tokenize import word_tokenize
 
 # Initialize CondCounter
