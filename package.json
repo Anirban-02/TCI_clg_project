@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"npm install --prefix ./frontend && npm run build --prefix ./frontend && npm install && npm i dotenv",
+    "build":"npm install --prefix ./frontend && npm run build --prefix ./frontend && npm install && npm i dotenv && npm i python",
     "vercel-build": "npm install --prefix ./frontend && npm run build --prefix ./frontend && npm install && npm i dotenv "
   },
   "keywords": [],
