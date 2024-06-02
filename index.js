@@ -8,7 +8,7 @@ require('dotenv').config()
 let file='';
 app.use(cors(
     {
-        origin:"http://localhost:5173",
+        origin:"https://tci-college-project.onrender.com",
         methods:["POST","GET"],
         credentials:true
     }
