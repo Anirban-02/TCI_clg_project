@@ -123,7 +123,7 @@ const handleOutput =async(e)=>{
       <div className=' mt-8 ml-12 text-[28px] font-medium '>Type or Upload your C flie :</div>
       <div className=' h-fit mt-1 flex justify-evenly '>
         <div className='flex flex-col w-2/5'>
-          <textarea id='input-text' className=' bg-violet-500 mt-4 rounded-lg p-8 text-[18px] caret-white cursor-default '  onChange={handleInput} rows={12} value={fileContent} />
+          <textarea id='input-text' className=' bg-violet-500 mt-4 rounded-lg p-8 text-[18px] caret-white cursor-default ' spellcheck="false"  onChange={handleInput} rows={12} value={fileContent} />
           <div className='mt-6 flex items-center justify-around '>
             <input type='file' ref={file} onChange={(e)=>handleFile(e)} ></input>
             <motion.button  whileTap={{scale:0.85}} className=' p-4 py-2 rounded-lg shadow-violet-950 shadow-md float-end text-[18px] font-medium'  onClick={()=>handleReset()}>Clear</motion.button>
