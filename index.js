@@ -9,7 +9,7 @@ require('dotenv').config()
 let file='';
 app.use(cors(
     {
-        origin:"https://tci-college-project.onrender.com",
+        origin:"https://tci-clg-project.vercel.app",
         methods:["POST","GET"],
         credentials:true
     }
