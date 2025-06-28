@@ -35,7 +35,7 @@ app.get('/api/output', (req, res) => {
     // spawn new child process to call the python script 
     // and pass the variable values to the python script
     code="for(i=0;i<10;i++)"
-    const python = spawn('python', ['/script.py',file['fileContent']]);
+    const python = spawn('python', ['script.py',file['fileContent']]);
     // collect data from script
     python.stdout.on('data', function (data) {
         console.log('Pipe data from python script ...');
