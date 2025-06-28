@@ -1,6 +1,5 @@
 const express = require('express')
 const { spawn } = require('child_process');
-spawn('node', ['index.js']);
 const app = express()
 const port=process.env.PORT||4000;
 const cors=require('cors');
@@ -9,7 +8,7 @@ require('dotenv').config()
 let file='';
 app.use(cors(
     {
-        origin:"https://tci-clg-project.vercel.app",
+        origin:"https://tci-college-project.onrender.com",
         methods:["POST","GET"],
         credentials:true
     }
@@ -35,7 +34,7 @@ app.get('/api/output', (req, res) => {
     // spawn new child process to call the python script 
     // and pass the variable values to the python script
     code="for(i=0;i<10;i++)"
-    const python = spawn('python', ['script.py',file['fileContent']]);
+    const python = spawn('python', ['./script.py',file['fileContent']]);
     // collect data from script
     python.stdout.on('data', function (data) {
         console.log('Pipe data from python script ...');
