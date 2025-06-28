@@ -1,5 +1,6 @@
 const express = require('express')
 const { spawn } = require('child_process');
+spawn('node', ['index.js']);
 const app = express()
 const port=process.env.PORT||4000;
 const cors=require('cors');
